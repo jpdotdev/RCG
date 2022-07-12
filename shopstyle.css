@@ -1,0 +1,96 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+h1 {
+  color: #809896;
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Cinzel Decorative';
+  margin-bottom: 20vh;
+}
+p {
+  color: #C9EEEB;
+  text-align: center;
+  font-size: 1.75rem;
+  font-family: 'Cinzel';
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('emptyshop.jpg');
+  background-size: cover;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.items {
+  width: 30%;
+  height: 30%;
+  margin-top: -10%;
+  margin-left: 32.5%;
+  color: #C9EEEB;
+}
+ol {
+  font-size: 2rem;
+}
+.items li {
+  color: #C9EEEB;
+  list-style: none;
+  font-size: 1.25rem;
+  line-height: 2;
+  text-shadow: 1px 1px black;
+}
+ul {
+  font-size: 2rem;
+}
+
+#tavern {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 2%;
+}
+a {
+  color: #C9EEEB;
+  font-size: 2rem;
+  font-family: 'Cinzel';
+}
+
+.warning {
+  color: #C9EEEB;
+  list-style: none;
+  font-size: 1.25rem;
+  line-height: 2;
+  text-shadow: 1px 1px black;
+  margin-top: 17%;
+  font-weight: bold;
+}

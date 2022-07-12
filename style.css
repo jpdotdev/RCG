@@ -1,0 +1,104 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+h1 {
+  color: #809896;
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Cinzel Decorative';
+  margin-bottom: 20vh;
+}
+p {
+  color: #C9EEEB;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 3;
+  letter-spacing: 2;
+  font-family: 'Cinzel';
+}
+button {
+  height: 10vh;
+  width: 10vw;
+  margin-left: 45%;
+  background-color: black;
+  color: #C9EEEB;
+  font-size: 2rem;
+  font-family: 'Cinzel';
+  border-radius: 35%;
+  margin-top: -10%;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: repeating-linear-gradient(#000000, #1b1b1b, #000000);
+  background-attachment: fixed;
+}
+
+div {
+  height: 25vh;
+  width: 100%;
+  background-image: url("hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-top: -7%;
+}
+
+img {
+  height: 30vh;
+  width: 15vw;
+  margin-left: 42.5%;
+}
+
+input {
+  width: 20%;
+  height: 3.5%;
+  margin: -5% 0 5% 40%;
+}
+
+a {
+  height: 10vh;
+  width: 10vw;
+  margin-left: 45%;
+  background-color: black;
+  color: #C9EEEB;
+  font-size: 2rem;
+  font-family: 'Cinzel';
+  border-radius: 35%;
+  margin-top: 10%;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

@@ -1,0 +1,106 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+h1 {
+  color: #809896;
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Cinzel Decorative';
+  margin-bottom: 20vh;
+}
+p {
+  color: #C9EEEB;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Cinzel';
+  text-shadow: 2px 2px black;
+  line-height: 2;
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body {
+  background-image: url('tavern.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.items {
+  width: 30%;
+  height: 30%;
+  margin-top: -10%;
+  margin-left: 32.5%;
+  color: #C9EEEB;
+}
+ol {
+  font-size: 2rem;
+}
+.items li {
+  color: #C9EEEB;
+  list-style: none;
+  font-size: 1.25rem;
+  line-height: 2;
+  text-shadow: 1px 1px black;
+}
+ul {
+  font-size: 2rem;
+}
+
+#tavern {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 20%;
+}
+a {
+  color: #C9EEEB;
+  font-size: 2rem;
+  font-family: 'Cinzel';
+}
+.hidden {
+  display: none;
+}
+#quest {
+  margin: auto;
+  width: 35%;
+  margin-top: 5%;
+}
+button {
+  height: 10vh;
+  width: 10vw;
+  margin-left: 45%;
+  background-color: black;
+  color: #C9EEEB;
+  font-size: 2rem;
+  font-family: 'Cinzel';
+  border-radius: 35%;
+  margin-top: 10%;
+}

@@ -18,20 +18,17 @@ function addSword() {
     li.appendChild(document.createTextNode('Sword'));
     ul.appendChild(li)
     document.querySelector('#goldAmount').innerText = gold
+    li.addEventListener('dblclick', removeSword)
+    function removeSword() {
+      li.remove();
+      gold = gold + 25
+      document.querySelector('#goldAmount').innerText = gold
+    }
   } else {
     alert("You better put that back right now...");
     document.querySelector('#goldAmount').innerText = gold
   }
 }
-
-document.querySelector('#sword').addEventListener('dblclick', removeSword)
-
-function removeSword() {
-  let liChosen = document.getElementById('sword')
-  liChosen.remove();
-  gold = gold + 25
-}
-
 
 document.querySelector('#bow').addEventListener('click', addBow)
 
@@ -44,6 +41,12 @@ function addBow() {
     li.appendChild(document.createTextNode('Bow & Arrows'));
     ul.appendChild(li)
     document.querySelector('#goldAmount').innerText = gold
+    li.addEventListener('dblclick', removeBow)
+    function removeBow() {
+      li.remove();
+      gold = gold + 35
+      document.querySelector('#goldAmount').innerText = gold
+    }
   } else {
     alert("You better put that back right now...");
     document.querySelector('#goldAmount').innerText = gold
@@ -61,6 +64,12 @@ function addMace() {
     li.appendChild(document.createTextNode('Mace'));
     ul.appendChild(li)
     document.querySelector('#goldAmount').innerText = gold
+    li.addEventListener('dblclick', removeMace)
+    function removeMace() {
+      li.remove();
+      gold = gold + 20
+      document.querySelector('#goldAmount').innerText = gold
+    }
   } else {
     alert("You better put that back right now...");
     document.querySelector('#goldAmount').innerText = gold;
@@ -78,6 +87,12 @@ function addShield() {
     li.appendChild(document.createTextNode('Shield'));
     ul.appendChild(li)
     document.querySelector('#goldAmount').innerText = gold
+    li.addEventListener('dblclick', removeShield)
+    function removeShield() {
+      li.remove();
+      gold = gold + 40
+      document.querySelector('#goldAmount').innerText = gold
+    }
   } else {
     alert("You better put that back right now...");
     document.querySelector('#goldAmount').innerText = gold;
@@ -95,6 +110,12 @@ function addArmor() {
     li.appendChild(document.createTextNode('Armor'));
     ul.appendChild(li)
     document.querySelector('#goldAmount').innerText = gold
+    li.addEventListener('dblclick', removeArmor)
+    function removeArmor() {
+      li.remove();
+      gold = gold + 50
+      document.querySelector('#goldAmount').innerText = gold
+    }
   } else {
     alert("You better put that back right now...");
     document.querySelector('#goldAmount').innerText = gold;
@@ -111,6 +132,12 @@ function addPack() {
     li.appendChild(document.createTextNode('Adventuring Pack'));
     ul.appendChild(li)
     document.querySelector('#goldAmount').innerText = gold
+    li.addEventListener('dblclick', removePack)
+    function removePack() {
+      li.remove();
+      gold = gold + 25
+      document.querySelector('#goldAmount').innerText = gold
+    }
   } else {
     alert("You better put that back right now...");
     document.querySelector('#goldAmount').innerText = gold;
@@ -127,6 +154,12 @@ function addLock() {
     li.appendChild(document.createTextNode('Lockpicks'));
     ul.appendChild(li)
     document.querySelector('#goldAmount').innerText = gold
+    li.addEventListener('dblclick', removeLock)
+    function removeLock() {
+      li.remove();
+      gold = gold + 5
+      document.querySelector('#goldAmount').innerText = gold
+    }
   } else {
     alert("You better put that back right now...");
     document.querySelector('#goldAmount').innerText = gold;
@@ -143,6 +176,12 @@ function addSymbol() {
     li.appendChild(document.createTextNode('Holy Symbol'));
     ul.appendChild(li)
     document.querySelector('#goldAmount').innerText = gold
+    li.addEventListener('dblclick', removeSymbol)
+    function removeSymbol() {
+      li.remove();
+      gold = gold + 40
+      document.querySelector('#goldAmount').innerText = gold
+    }
   } else {
     alert("You better put that back right now...");
     document.querySelector('#goldAmount').innerText = gold;
@@ -159,6 +198,12 @@ function addBoots() {
     li.appendChild(document.createTextNode('Riding Boots'));
     ul.appendChild(li)
     document.querySelector('#goldAmount').innerText = gold
+    li.addEventListener('dblclick', removeBoots)
+    function removeBoots() {
+      li.remove();
+      gold = gold + 10
+      document.querySelector('#goldAmount').innerText = gold
+    }
   } else {
     alert("You better put that back right now...");
     document.querySelector('#goldAmount').innerText = gold;
@@ -175,6 +220,12 @@ function addHook() {
     li.appendChild(document.createTextNode('Grappling Hook'));
     ul.appendChild(li)
     document.querySelector('#goldAmount').innerText = gold
+    li.addEventListener('dblclick', removeHook)
+    function removeHook() {
+      li.remove();
+      gold = gold + 5
+      document.querySelector('#goldAmount').innerText = gold
+    }
   } else {
     alert("You better put that back right now...");
     document.querySelector('#goldAmount').innerText = gold;
